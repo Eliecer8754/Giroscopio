@@ -13,6 +13,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+/**
+ * Actividad principal que implementa un juego de preguntas controlado por el giroscopio.
+ * Los usuarios responden inclinando el dispositivo a izquierda (Falso) o derecha (Verdadero).
+ */
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
     private SensorManager sensorManager;
@@ -80,6 +84,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         showQuestion(); // Mostrar primera pregunta
     }
 
+    /**
+     * Muestra la pregunta actual y prepara la interfaz para recibir respuesta
+     */
     private void showQuestion() {
         if (currentQuestion < questions.length) {
             questionText.setText(questions[currentQuestion]); // Mostrar texto de pregunta
