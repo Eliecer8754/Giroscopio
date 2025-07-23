@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_menu"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Aprende sobre Panamá"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnJuego"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Juego de Provincias"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSensor"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Sensor Giroscopio"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

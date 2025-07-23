@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SensorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginTop="74sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prueba tu Giroscopio"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_marginBottom="14sp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El giróscopo, es un dispositivo que mide la velocidad de rotación o cambio de orientación de un objeto. Funciona detectando la velocidad angular, es decir, la rapidez con la que un objeto rota en un determinado eje" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/giroscopio"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ballImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sensorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver al Menú"
+            android:layout_marginTop="10dp"
+            android:onClick="volverAMenu"/>
+
+    </LinearLayout>
+</ScrollView>
